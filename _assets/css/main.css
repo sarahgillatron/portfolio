@@ -1,0 +1,59 @@
+/* GENERAL */
+body {
+  background-color: rgba(var(--main-colour), 0.5);
+  transition: background-color 1s;}
+
+.overflow-none {
+    overflow: hidden;}
+
+
+
+
+/* CANVAS */
+canvas {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:0;}
+
+
+/* LAYOUT */
+section.full-screen {
+  min-height:100vh;
+  width:100vw;}
+
+section.center-left {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;}
+
+.container {
+  width: var(--page-max-width);
+  margin: 0 auto;}
+
+.w-70 {
+  width:70%;}
+
+
+
+
+/* CAROUSEL */
+.invisible-link--top {
+  width:100vw;
+  height:50vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:2;
+  display:none;}
+
+.invisible-link--bottom {
+  width:100vw;
+  height:50vh;
+  position:fixed;
+  bottom:0;
+  left:0;
+  z-index:2;}
+
+main {
+  transition: all 1s;}
