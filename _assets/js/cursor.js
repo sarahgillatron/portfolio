@@ -25,7 +25,8 @@ var cursor = $(".cursor");
       .mouseenter(function() {
         cursor.css({
           transform: "scale(2)",
-          backgroundImage: 'none'
+          backgroundImage: 'none',
+          backgroundColor: 'rgba(255,255,255,0.5)'
         });
 
       })
@@ -33,6 +34,7 @@ var cursor = $(".cursor");
       .mouseleave(function() {
         cursor.css({
           transform: "scale(1)",
+          backgroundColor: 'rgba(255,255,255,1)'
 
         });
 
