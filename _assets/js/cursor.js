@@ -45,7 +45,7 @@ var cursor = $(".cursor");
     $(".invisible-link--top")
       .mouseenter(function() {
         cursor.css({
-          backgroundImage: 'url("_uploads/big-arrow.svg")',
+          backgroundImage: 'url("../_uploads/big-arrow.svg")',
           backgroundColor: 'transparent',
           height: '100px',
           width: '100px',
@@ -71,7 +71,7 @@ var cursor = $(".cursor");
     $(".invisible-link--bottom")
       .mouseenter(function() {
         cursor.css({
-          backgroundImage: 'url("_uploads/big-arrow.svg")',
+          backgroundImage: 'url("../_uploads/big-arrow.svg")',
           backgroundColor: 'transparent',
           height: '100px',
           width: '100px',

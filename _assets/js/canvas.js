@@ -45,23 +45,43 @@ function Circle(x, y, dx, dy, r) {
   }
 }
 
-
 var circleArray = [];
 
-for(var j = 0; j < 10; j++) {
-  //radius
-  var r = Math.random() * 200;
+var mq = window.matchMedia( "(max-width: 550px)" );
+if (mq.matches) {
+  for(var j = 0; j < 7; j++) {
+    //radius
+    var r = Math.random() * 100;
 
 
-  var x = Math.random() * (innerWidth - r * 2) + r;
-  var y = Math.random() * (innerHeight - r * 2) + r;
+    var x = Math.random() * (innerWidth - r * 2) + r;
+    var y = Math.random() * (innerHeight - r * 2) + r;
 
-  //velocity
-  var dx = (Math.random() - 0.5) * 2;
-  var dy = (Math.random() - 0.5) * 2;
+    //velocity
+    var dx = (Math.random() - 0.5) * 2;
+    var dy = (Math.random() - 0.5) * 2;
 
-  circleArray.push( new Circle(x, y, dx, dy, r) );
+    circleArray.push( new Circle(x, y, dx, dy, r) );
+  }
 }
+else {
+  for(var j = 0; j < 10; j++) {
+    //radius
+    var r = Math.random() * 200;
+
+
+    var x = Math.random() * (innerWidth - r * 2) + r;
+    var y = Math.random() * (innerHeight - r * 2) + r;
+
+    //velocity
+    var dx = (Math.random() - 0.5) * 2;
+    var dy = (Math.random() - 0.5) * 2;
+
+    circleArray.push( new Circle(x, y, dx, dy, r) );
+  }
+}
+
+
 
 
 
@@ -76,3 +96,15 @@ function animate() {
 }
 
 animate();
+
+
+
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener('resize', function() {
+  resizeCanvas();
+});

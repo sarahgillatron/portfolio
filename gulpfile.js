@@ -26,6 +26,7 @@ function runCss() {
     postCss([
       require("autoprefixer"),
       require("postcss-preset-env")({
+        stage: 1,
         browsers: ['IE 11', 'last 2 versions']
       })
     ])

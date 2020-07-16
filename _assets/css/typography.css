@@ -1,7 +1,13 @@
+@custom-media --mq-xs (max-width:550px);
+@custom-media --mq-small (max-width:800px);
+@custom-media --mq-medium (max-width:1100px);
+@custom-media --mq-large (max-width:1500px);
+
 h1, h2 {
   font: var(--main-font--bold) var(--header-large) var(--main-font);
   z-index:2;
   position: relative;
+  margin: calc(var(--spacing-base) * 4) 0px;
 }
 
 h1 a, h2 a {
@@ -25,6 +31,26 @@ a {
   border-bottom: 10px solid rgba(var(--main-colour), 1);
 }
 
-a.orange {
-  border-bottom: 10px solid var(--orange-solid);
+@media (--mq-xs) {
+  a {
+    border-bottom: 6px solid rgba(var(--main-colour), 1);
+  }
+}
+
+p.page-furniture {
+  font: var(--page-furniture-small) var(--sub-font);
+  z-index:2;
+  position: relative;
+}
+
+.testimonial p {
+  font: var(--main-font--bold) var(--paragraph-large) var(--main-font);
+  z-index:2;
+  position: relative;
+}
+
+.testimonial p.light {
+  font: var(--main-font--regular) var(--paragraph) var(--main-font);
+  z-index:2;
+  position: relative;
 }

@@ -1,0 +1,13 @@
+.touchscreen-only {
+  display:none;
+}
+
+@media (hover: none) {
+  .touchscreen-only {
+    display:block;
+  }
+
+  div.cursor {
+    display:none;
+  }
+}

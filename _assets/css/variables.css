@@ -1,5 +1,7 @@
-@custom-media --mq-small (max-width:550px);
-@custom-media --mq-small (max-width:550px);
+@custom-media --mq-xs (max-width:550px);
+@custom-media --mq-small (max-width:800px);
+@custom-media --mq-medium (max-width:1100px);
+@custom-media --mq-large (max-width:1500px);
 
 :root {
   /* COLOURS */
@@ -30,6 +32,7 @@
   --header-large: 120px / 130px;
   --header-medium: 80px / 96px;
   --header-small: 48px / 48px;
+  --paragraph-large: 48px / 64px;
   --paragraph: 32px / 48px;
   --small: 22px / 24px;
 
@@ -39,15 +42,22 @@
 
   /* SPACING / LAYOUT */
   --page-max-width: 1470px;
-  --page-padding: 0px 230px;
+  --page-margin: 0px 8em;
 
-  --padding-base: 8px;
+  --spacing-base: 8px;
 }
 
-@media (--mq-small) {
+@media (--mq-large) {
+  :root {
+    --header-large: 90px / 100px;
+  }
+}
+
+
+@media (--mq-xs) {
   :root {
     /* FONT SIZES */
-    --header-large: 48px / 56px;
+    --header-large: 42px / 50px;
     --header-medium: 28px / 30px;
     --header-small: 28px / 30px;
     --paragraph: 18px / 30px;
@@ -58,6 +68,6 @@
 
 
     /* SPACING / LAYOUT */
-    --page-padding: 0px 30px;
+    --page-margin: 0px 30px;
   }
 }
