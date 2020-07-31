@@ -52,8 +52,8 @@ function jekyllbuild (done) {
 
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
-
 };
+
 
 function runJs() {
   return gulp.src([

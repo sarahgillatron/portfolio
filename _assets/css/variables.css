@@ -43,6 +43,7 @@
   /* SPACING / LAYOUT */
   --page-max-width: 1470px;
   --page-margin: 0px 8em;
+  --page-margin-single: 8em;
 
   --spacing-base: 8px;
 }
@@ -69,5 +70,6 @@
 
     /* SPACING / LAYOUT */
     --page-margin: 0px 30px;
+    --page-margin-single: 30px;
   }
 }

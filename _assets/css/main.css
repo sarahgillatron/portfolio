@@ -105,3 +105,44 @@ p.page-furniture span {
   display: inline-block;
   margin-right:10px;
 }
+
+.testimonials {
+  position:relative;
+}
+
+.testimonial {
+  display:none;
+}
+
+.carousel-nav__prev, .carousel-nav__next  {
+  width: var(--page-margin-single);
+  display: block;
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index:9999;
+}
+
+.carousel-nav__prev  {
+  left: calc(-1 * var(--page-margin-single));
+}
+
+.carousel-nav__next {
+  right: calc(-1 * var(--page-margin-single));
+}
+
+.testimonial.active p {
+  animation-name: fadeIn;
+  animation-duration:2s;
+  animation-fill-mode: both;
+}
+
+.testimonial.active {
+  display:block;
+}
+
+@keyframes fadeIn {
+ from{opacity:0;}
+ to{opacity:1;}
+}

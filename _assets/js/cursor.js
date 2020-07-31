@@ -93,4 +93,55 @@ var cursor = $(".cursor");
         });
       });
 
+
+      $(".carousel-nav__prev")
+        .mouseenter(function() {
+          cursor.css({
+            backgroundImage: 'url("../_uploads/big-arrow.svg")',
+            backgroundColor: 'transparent',
+            height: '100px',
+            width: '100px',
+            backgroundSize: 'contain',
+            borderRadius: '0',
+            transform: 'rotate(180deg)'
+          });
+        })
+
+        .mouseleave(function() {
+          cursor.css({
+            backgroundImage: 'none',
+            backgroundColor: '#ffffff',
+            height: '40px',
+            width: '40px',
+            backgroundSize: '16px 8px',
+            borderRadius: '50%',
+            transform: 'rotate(0deg)'
+          });
+        });
+
+        $(".carousel-nav__next")
+          .mouseenter(function() {
+            cursor.css({
+              backgroundImage: 'url("../_uploads/big-arrow.svg")',
+              backgroundColor: 'transparent',
+              height: '100px',
+              width: '100px',
+              backgroundSize: 'contain',
+              borderRadius: '0',
+              transform: 'rotate(0deg)'
+            });
+          })
+
+          .mouseleave(function() {
+            cursor.css({
+              backgroundImage: 'none',
+              backgroundColor: '#ffffff',
+              height: '40px',
+              width: '40px',
+              backgroundSize: '16px 8px',
+              borderRadius: '50%',
+              transform: 'rotate(0deg)'
+            });
+          });
+
 });
